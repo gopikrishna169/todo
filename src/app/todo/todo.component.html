@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Priority <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">High</a></li>
+        <li><a href="#">Low</a></li>
+      </ul>
+    </div>
+    <div class="col-md-5">
+      <input type="text" class="form-control" aria-label="task" [(ngModel)]="todo.task">
+    </div>
+    <div class="col-md-5">
+      <input type="date" class="form-control" aria-label="date" [(ngModel)]="todo.date">
+    </div>
+  </div>
+  <div class="row btn-cls">
+    <button type="button" class="btn btn-success" (click)="onClicked()">AddTodo</button>
+   
+ 
+  </div>
+
+</div>

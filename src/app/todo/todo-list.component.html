@@ -1,0 +1,19 @@
+<app-todo (clicked)="onClicked($event)">
+</app-todo>
+<div class="container">      
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Due</th>
+     
+       </tr>
+    </thead>
+    
+   <tr *ngFor="let todo of todos ">
+   <td >{{todo.task}}</td>
+   <td >{{todo.date}}</td> 
+   </tr>
+ 
+    
+  </table>
