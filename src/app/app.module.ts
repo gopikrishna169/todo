@@ -9,7 +9,8 @@ import { TodoComponent } from './todo/todo.component';
 import { HeaderComponent } from './header.component';
 import { TodoListComponent } from './todo/todo-list.component';
 import { LocalStorageModule } from 'angular-2-local-storage';
-import { PushComponent } from './push.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,11 +19,12 @@ import { PushComponent } from './push.component';
     HeaderComponent,
     TodoListComponent,
     TodoListComponent,
-    PushComponent,
     
+
   ],
   imports: [
     BrowserModule,
+ 
     FormsModule,
     HttpModule,
      LocalStorageModule.withConfig({
